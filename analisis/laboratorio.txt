@@ -1,0 +1,41 @@
+Diseñe un programa en PHP para la gestión administrativa de exámenes de laboratorios clínicos
+
+- ingresar la información del paciente x
+- genere la solicitud de los exámenes de laboratorios a realizar x
+- ingresar los resultados de los exámenes practicados al paciente x
+- los mismo resultados debe de ser enviados por correo en formato pdf
+
+[] administrador
+[] atención al cliente
+[] enfermero
+
+- Administrador:{
+    contratar [*] (nuevo usuario)
+    despedir  [*] (eliminar usuario)
+    cambiar rol [*] (actualizar usuario) 
+}
+- Atencion al cliente:{
+
+    registrar al paciente [*]
+    generar solicitud de examenes[*],
+    listar solicitudes de examenes (en espera, ejecutada)[*]
+}
+
+- enfermero:{
+
+    listar solicitudes de examenes (en espera, ejecutada)[*] ,
+    insertar resultados del examen practicados al paciente (solo si esta en espera)[*]
+
+}
+
+roles_id
+
+1 : administrador
+2 : atencion al cliente
+3 : enfermero
+
+
+
+
+
+
